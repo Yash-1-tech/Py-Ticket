@@ -27,7 +27,7 @@ def get_input(prompt="input: ", input_type="str", required=False, give_parameter
                 continue
         else:
             raise ValueError(
-                f"Invalid type '{input_type}' passed to get_input(). Valid types: 'str', 'int', 'float'."
+                f"Invalid type '{input_type}' passed to get_input(). Valid input_types: 'str', 'int', 'float'."
             )
 
         if required and (value== "" or value is None):
